@@ -35,15 +35,12 @@ class CompetitionBloc extends Bloc<CompetitionEvent, CompetitionState> {
     Emitter<CompetitionState> emit,
   ) async {
     try {
-      print('state.status ${state.status}');
       final competitions = await fetchCompetitions(httpClient);
-      print('competitions ${competitions.length}');
       return emit(state.copyWith(
         status: CompetitionStatus.success,
         competitions: competitions,
       ));
     } catch (_) {
-      print('failure ${_.toString()}');
       emit(state.copyWith(status: CompetitionStatus.failure));
     }
   }

@@ -2,6 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:flutter_svg/flutter_svg.dart';
 import 'package:rg_soccer_app/src/competitions/models/models.dart';
 import 'package:rg_soccer_app/src/competitions/widgets/widgets.dart';
+import 'package:rg_soccer_app/src/detail_competitions/view/view.dart';
 import 'package:rg_soccer_app/src/utils/rg_color.dart';
 
 class CompetitionListItem extends StatelessWidget {
@@ -17,7 +18,14 @@ class CompetitionListItem extends StatelessWidget {
       height: 96,
       child: InkWell(
         onTap: () {
-          print(competitions.id);
+          Navigator.push(
+            context,
+            MaterialPageRoute(
+              builder: (context) => DetailPage(
+                competitions: competitions,
+              ),
+            ),
+          );
         },
         child: Column(
           mainAxisSize: MainAxisSize.min,

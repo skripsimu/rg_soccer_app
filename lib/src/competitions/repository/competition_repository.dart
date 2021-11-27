@@ -5,12 +5,11 @@ import 'package:rg_soccer_app/src/competitions/models/models.dart';
 import 'package:rg_soccer_app/src/config/config.dart';
 import 'package:rg_soccer_app/src/config/methods.dart';
 
-Future<List<Competitions>> fetchCompetitions(http.Client httpClient,
-    [int startIndex = 0]) async {
+Future<List<Competitions>> fetchCompetitions(http.Client httpClient) async {
   final response = await httpClient.get(
     Uri.parse(Methods.leagues).replace(queryParameters: {
       'plan': 'TIER_ONE',
-      'areas': '20729',
+      'areas': '2072,2224,2114,2081,2088,2163,2187',
     }),
     headers: {'X-Auth-Token': Config.authToken},
   );
