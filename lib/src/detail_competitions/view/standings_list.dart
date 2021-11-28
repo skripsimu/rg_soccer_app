@@ -1,9 +1,9 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
-import 'package:rg_soccer_app/src/competitions/widgets/page_unavailable.dart';
-import 'package:rg_soccer_app/src/detail_competitions/blocs/standing_bloc/standing_bloc.dart';
-import 'package:rg_soccer_app/src/detail_competitions/widgets/widgets.dart';
-import 'package:rg_soccer_app/src/utils/rg_color.dart';
+import 'package:rg_soccer_app/src/competitions/competiotions.dart';
+import 'package:rg_soccer_app/src/utils/utils.dart';
+
+import '../detail_competitions.dart';
 
 class StandingList extends StatelessWidget {
   @override

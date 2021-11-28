@@ -1,8 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
-import 'package:rg_soccer_app/src/competitions/blocs/competition_bloc.dart';
-import 'package:rg_soccer_app/src/competitions/widgets/page_unavailable.dart';
-import 'package:rg_soccer_app/src/competitions/widgets/widgets.dart';
+
+import '../competiotions.dart';
 
 class CompetitionList extends StatelessWidget {
   @override

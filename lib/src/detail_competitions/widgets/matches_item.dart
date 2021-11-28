@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
-import 'package:rg_soccer_app/src/detail_competitions/models/matches.dart';
+
+import '../detail_competitions.dart';
 
 class MatchesItem extends StatelessWidget {
   const MatchesItem({Key? key, required this.matches}) : super(key: key);

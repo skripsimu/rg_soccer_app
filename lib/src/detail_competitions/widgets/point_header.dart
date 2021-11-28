@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
-import 'package:rg_soccer_app/src/detail_competitions/widgets/widgets.dart';
-import 'package:rg_soccer_app/src/utils/rg_color.dart';
+import 'package:rg_soccer_app/src/utils/utils.dart';
+
+import '../detail_competitions.dart';
 
 class PointHeader extends StatelessWidget {
   const PointHeader({Key? key}) : super(key: key);

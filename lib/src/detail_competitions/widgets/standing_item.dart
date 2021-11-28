@@ -1,9 +1,9 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_svg/svg.dart';
 import 'package:mime/mime.dart';
-import 'package:rg_soccer_app/src/detail_competitions/models/models.dart';
-import 'package:rg_soccer_app/src/utils/rg_color.dart';
+import 'package:rg_soccer_app/src/utils/utils.dart';
 
+import '../detail_competitions.dart';
 import 'point_item.dart';
 
 class StandingItem extends StatelessWidget {

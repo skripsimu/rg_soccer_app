@@ -1,12 +1,10 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
 import 'package:rg_soccer_app/src/competitions/models/competitions.dart';
-import 'package:rg_soccer_app/src/detail_competitions/blocs/matches_bloc/matches_bloc.dart';
-import 'package:rg_soccer_app/src/detail_competitions/blocs/standing_bloc/standing_bloc.dart';
-import 'package:rg_soccer_app/src/detail_competitions/view/matches_list.dart';
-import 'package:rg_soccer_app/src/detail_competitions/view/standings_list.dart';
-import 'package:rg_soccer_app/src/utils/rg_color.dart';
 import 'package:http/http.dart' as http;
+import 'package:rg_soccer_app/src/utils/utils.dart';
+
+import '../detail_competitions.dart';
 
 class DetailPage extends StatefulWidget {
   const DetailPage({Key? key, required this.competitions}) : super(key: key);

@@ -10,7 +10,7 @@ Future<List<Standings>> fetchStandings(
     http.Client httpClient, String id) async {
   final response = await httpClient.get(
     Uri.parse(Methods.leagues + '/$id' + Methods.standings),
-    headers: {'X-Auth-Token': Config.authToken},
+    headers: {'X-Auth-Token': Key.authToken},
   );
   if (response.statusCode == 200) {
     final body = json.decode(response.body)['standings'][0]['table'] as List;

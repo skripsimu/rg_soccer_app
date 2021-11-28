@@ -1,3 +1,2 @@
-class Config {
-  static String authToken = 'd4f95e5d387140068fe556097c94cb34';
-}
+export 'key.dart';
+export 'methods.dart';

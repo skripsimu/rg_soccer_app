@@ -1,7 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:rg_soccer_app/src/competitions/competiotions.dart';
-import 'package:rg_soccer_app/src/utils/assets.dart';
-import 'package:rg_soccer_app/src/utils/rg_transition.dart';
+import 'package:rg_soccer_app/src/utils/utils.dart';
 
 class SplashScreen extends StatefulWidget {
   const SplashScreen({Key? key}) : super(key: key);

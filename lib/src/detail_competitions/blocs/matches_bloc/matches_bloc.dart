@@ -6,18 +6,10 @@ import 'package:equatable/equatable.dart';
 import 'package:http/http.dart' as http;
 import 'package:rg_soccer_app/src/detail_competitions/models/models.dart';
 import 'package:rg_soccer_app/src/detail_competitions/repository/repository.dart';
-import 'package:stream_transform/stream_transform.dart';
+import 'package:rg_soccer_app/src/utils/utils.dart';
 
 part 'matches_event.dart';
 part 'matches_state.dart';
-
-const throttleDuration = Duration(milliseconds: 100);
-
-EventTransformer<E> throttleDroppable<E>(Duration duration) {
-  return (events, mapper) {
-    return droppable<E>().call(events.throttle(duration), mapper);
-  };
-}
 
 class MatchesBloc extends Bloc<MatchesEvent, MatchesState> {
   MatchesBloc({required this.httpClient, required this.id})

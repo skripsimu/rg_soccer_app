@@ -1,9 +1,8 @@
 import 'package:flutter/material.dart';
 import 'package:intl/intl.dart';
-import 'package:rg_soccer_app/src/detail_competitions/models/models.dart';
 import "package:collection/collection.dart";
 
-import 'matches_item.dart';
+import '../detail_competitions.dart';
 
 class HeaderMatchesItem extends StatelessWidget {
   const HeaderMatchesItem({Key? key, required this.matches}) : super(key: key);

@@ -16,7 +16,7 @@ Future<List<Matches>> fetchMatches(http.Client httpClient, String id) async {
         'dateTo': DateFormat('yyyy-MM-dd').format(DateTime.now().add(Duration(days: 14))),
       }
     ),
-    headers: {'X-Auth-Token': Config.authToken},
+    headers: {'X-Auth-Token': Key.authToken},
   );
   if (response.statusCode == 200) {
     final body = json.decode(response.body)['matches'] as List;

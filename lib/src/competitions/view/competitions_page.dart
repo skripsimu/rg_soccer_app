@@ -2,10 +2,9 @@ import 'package:flutter/material.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
 import 'package:flutter_svg/svg.dart';
 import 'package:http/http.dart' as http;
-import 'package:rg_soccer_app/src/competitions/blocs/competition_bloc.dart';
-import 'package:rg_soccer_app/src/competitions/view/competitions_list.dart';
-import 'package:rg_soccer_app/src/utils/assets.dart';
-import 'package:rg_soccer_app/src/utils/rg_color.dart';
+import 'package:rg_soccer_app/src/utils/utils.dart';
+
+import '../competiotions.dart';
 
 class CompetitionPage extends StatelessWidget {
   @override

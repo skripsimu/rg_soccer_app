@@ -1,6 +1,6 @@
 import 'package:equatable/equatable.dart';
-import 'package:rg_soccer_app/src/detail_competitions/models/score.dart';
-import 'package:rg_soccer_app/src/detail_competitions/models/team.dart';
+
+import '../detail_competitions.dart';
 
 class Matches extends Equatable {
   const Matches({
