@@ -28,7 +28,7 @@ Future<List<Standings>> fetchStandings(
         team: Team(
           id: json['team']['id'] as int,
           name: json['team']['name'] as String,
-          crestUrl: json['team']['crestUrl'] as String,
+          crestUrl: (json['team']['crestUrl'] ?? 'https://e7.pngegg.com/pngimages/710/859/png-clipart-logo-football-team-football-logo-design-free-logo-design-template-label-thumbnail.png') as String,
         ),
       );
     }).toList();
