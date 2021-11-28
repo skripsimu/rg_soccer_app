@@ -12,7 +12,7 @@ class HeaderMatchesItem extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    var groupByDate = groupBy(matches, (Matches match) => match.utcDate);
+    var groupByDate = groupBy(matches, (Matches match) => match.utcDate.toString().substring(0, 10));
     return ListView(
         children: groupByDate.entries.map((entry) {
       return Column(
@@ -40,9 +40,9 @@ class HeaderMatchesItem extends StatelessWidget {
           ),
           Wrap(
             children: List.generate(
-              matches.length,
+              entry.value.length,
               (index) => MatchesItem(
-                matches: matches[index],
+                matches: entry.value[index],
               ),
             ),
           )

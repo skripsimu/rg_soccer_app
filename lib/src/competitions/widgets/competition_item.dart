@@ -4,6 +4,7 @@ import 'package:rg_soccer_app/src/competitions/models/models.dart';
 import 'package:rg_soccer_app/src/competitions/widgets/widgets.dart';
 import 'package:rg_soccer_app/src/detail_competitions/view/view.dart';
 import 'package:rg_soccer_app/src/utils/rg_color.dart';
+import 'package:rg_soccer_app/src/utils/rg_transition.dart';
 
 class CompetitionListItem extends StatelessWidget {
   const CompetitionListItem({Key? key, required this.competitions})
@@ -18,14 +19,8 @@ class CompetitionListItem extends StatelessWidget {
       height: 96,
       child: InkWell(
         onTap: () {
-          Navigator.push(
-            context,
-            MaterialPageRoute(
-              builder: (context) => DetailPage(
-                competitions: competitions,
-              ),
-            ),
-          );
+          Navigator.push(context,
+              RGTransition(widget: DetailPage(competitions: competitions)));
         },
         child: Column(
           mainAxisSize: MainAxisSize.min,
