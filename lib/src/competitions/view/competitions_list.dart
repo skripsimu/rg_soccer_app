@@ -17,8 +17,8 @@ class CompetitionList extends StatelessWidget {
           case CompetitionStatus.success:
             if (state.competitions.isEmpty) {
               return PageUnavailable(
-                icon: Icons.hourglass_empty,
-                message: 'No leagues found',
+                icon: Icons.hourglass_empty, 
+                message: 'No competitions found',
               );
             }
             return Padding(
