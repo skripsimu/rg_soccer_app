@@ -1,21 +1,21 @@
-part of 'match_bloc.dart';
+part of 'matches_bloc.dart';
 
-enum MatchStatus { initial, success, failure }
+enum MatchesStatus { initial, success, failure }
 
-class MatchState extends Equatable {
-  const MatchState({
-    this.status = MatchStatus.initial,
+class MatchesState extends Equatable {
+  const MatchesState({
+    this.status = MatchesStatus.initial,
     this.matches = const <Matches>[],
   });
 
-  final MatchStatus status;
+  final MatchesStatus status;
   final List<Matches> matches;
 
-  MatchState copyWith({
-    MatchStatus? status,
+  MatchesState copyWith({
+    MatchesStatus? status,
     List<Matches>? matches,
   }) {
-    return MatchState(
+    return MatchesState(
       status: status ?? this.status,
       matches: matches ?? this.matches,
     );

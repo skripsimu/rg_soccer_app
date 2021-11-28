@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
 import 'package:rg_soccer_app/src/competitions/models/competitions.dart';
-import 'package:rg_soccer_app/src/detail_competitions/blocs/matches_bloc/match_bloc.dart';
+import 'package:rg_soccer_app/src/detail_competitions/blocs/matches_bloc/matches_bloc.dart';
 import 'package:rg_soccer_app/src/detail_competitions/blocs/standing_bloc/standing_bloc.dart';
 import 'package:rg_soccer_app/src/detail_competitions/view/matches_list.dart';
 import 'package:rg_soccer_app/src/detail_competitions/view/standings_list.dart';
@@ -58,10 +58,10 @@ class _DetailPageState extends State<DetailPage>
             child: StandingList(),
           ),
           BlocProvider(
-            create: (_) => MatchBloc(
+            create: (_) => MatchesBloc(
               httpClient: http.Client(),
               id: '${widget.competitions.id}',
-            )..add(MatchFetched()),
+            )..add(MatchesFetched()),
             child: MatchesList(),
           ),
         ],
