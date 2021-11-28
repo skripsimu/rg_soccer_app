@@ -1,3 +1,3 @@
 class Key {
-  static String authToken = 'd4f95e5d387140068fe556097c94cb34';
+  static String authToken = '6c146dced4da4d78850b12611d384d17';
 }
