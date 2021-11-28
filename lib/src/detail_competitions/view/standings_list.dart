@@ -13,8 +13,8 @@ class StandingList extends StatelessWidget {
         switch (state.status) {
           case StandingStatus.failure:
             return PageUnavailable(
-              icon: Icons.signal_wifi_connected_no_internet_4,
-              message: 'There is no internet connection',
+              icon: Icons.error,
+              message: 'Something when wrong, please try again later',
             );
           case StandingStatus.success:
             if (state.standings.isEmpty) {

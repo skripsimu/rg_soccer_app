@@ -12,8 +12,8 @@ class CompetitionList extends StatelessWidget {
         switch (state.status) {
           case CompetitionStatus.failure:
             return PageUnavailable(
-              icon: Icons.signal_wifi_connected_no_internet_4,
-              message: 'There is no internet connection',
+              icon: Icons.error,
+              message: 'Something when wrong, please try again later',
             );
           case CompetitionStatus.success:
             if (state.competitions.isEmpty) {
