@@ -7,23 +7,17 @@ void main() {
       expect(
           Competitions(
             area: Area(
-              id: 1,
-              countryCode: 'PL',
               ensignUrl: '',
               name: 'Man UTD',
             ),
-            code: 'PL',
             id: 1,
             name: 'Premiere League',
           ),
           Competitions(
             area: Area(
-              id: 1,
-              countryCode: 'PL',
               ensignUrl: '',
               name: 'Man UTD',
             ),
-            code: 'PL',
             id: 1,
             name: 'Premiere League',
           ));

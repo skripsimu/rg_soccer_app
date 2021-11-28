@@ -18,11 +18,8 @@ Future<List<Competitions>> fetchCompetitions(http.Client httpClient) async {
       return Competitions(
         id: json['id'] as int,
         name: json['name'] as String,
-        code: json['plan'] as String,
         area: Area(
-          id: json['area']['id'] as int,
           name: json['area']['name'] as String,
-          countryCode: json['area']['countryCode'] as String,
           ensignUrl: json['area']['ensignUrl'] as String,
         ),
       );
