@@ -22,21 +22,6 @@ extension on WidgetTester {
 }
 
 void main() {
-  final mockCompetitions = List.generate(
-    5,
-    (i) => Competitions(
-      area: Area(
-        id: i,
-        countryCode: 'PL',
-        ensignUrl: '',
-        name: 'Man UTD',
-      ),
-      code: 'PL',
-      id: i,
-      name: 'Premiere League',
-    ),
-  );
-
   late CompetitionBloc competitionBloc;
 
   setUp(() {
