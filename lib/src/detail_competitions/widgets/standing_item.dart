@@ -1,6 +1,5 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_svg/svg.dart';
-import 'package:mime/mime.dart';
 import 'package:rg_soccer_app/src/utils/utils.dart';
 
 import '../detail_competitions.dart';
@@ -13,7 +12,6 @@ class StandingItem extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    final mimeType = lookupMimeType(standings.team.crestUrl);
     return Container(
       padding: EdgeInsets.symmetric(vertical: 4, horizontal: 20),
       color: standings.position.isOdd
@@ -38,7 +36,7 @@ class StandingItem extends StatelessWidget {
               SizedBox(
                 width: 22,
                 height: 22,
-                child: mimeType.toString().contains('svg')
+                child: standings.team.crestUrl.contains('.svg')
                     ? SvgPicture.network(
                         standings.team.crestUrl,
                         width: 22,
