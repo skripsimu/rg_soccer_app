@@ -1,7 +1,6 @@
 import 'package:flutter/material.dart';
-
-import 'competitions/competiotions.dart';
+import 'package:rg_soccer_app/src/splash/splash.dart';
 
 class App extends MaterialApp {
-  App() : super(home: CompetitionView(), debugShowCheckedModeBanner: false);
+  App() : super(home: SplashScreen(), debugShowCheckedModeBanner: false);
 }

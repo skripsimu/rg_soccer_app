@@ -7,7 +7,7 @@ import 'package:rg_soccer_app/src/competitions/view/competitions_list.dart';
 import 'package:rg_soccer_app/src/utils/assets.dart';
 import 'package:rg_soccer_app/src/utils/rg_color.dart';
 
-class CompetitionView extends StatelessWidget {
+class CompetitionPage extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
