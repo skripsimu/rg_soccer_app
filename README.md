@@ -1,5 +1,9 @@
 # rg_soccer_app
 
+## Solutions
+
+My solution, in this application I use bloc for state management so that application performance is better, from the developer side it is also easier to maintain, and manage every condition. For the folder structure, I separate them according to their respective features to make it easier to maintain.
+
 ## Requirements
 - Flutter (v 2.5.3)
 - Dart Sdk (>=2.12.0 <3.0.0)
@@ -44,3 +48,12 @@ Run the app
 ```
 flutter build apk --release
 ```
+
+## Summary
+
+The app I created has 3 pages:
+1. competition list
+2. league table
+3. available matches.
+
+On each page, there are 3 conditions when the application is successfully loaded, error or does not have data from api. I also changed the transition between pages and added a loading indicator.
