@@ -1,9 +1,5 @@
 # rg_soccer_app
 
-## Solutions
-
-My solution, in this application I use bloc for state management so that application performance is better, from the developer side it is also easier to maintain, and manage every condition. For the folder structure, I separate them according to their respective features to make it easier to maintain.
-
 ## Requirements
 - Flutter (v 2.5.3)
 - Dart Sdk (>=2.12.0 <3.0.0)
